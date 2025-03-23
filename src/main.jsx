@@ -1,12 +1,11 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import { MyFirstComponent } from './App'
-
-createRoot(document.getElementById('root')).render(
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import App from "./App";
+import {DeviceList} from "./LoopRender";
+import FootballerList from "./footballer/FootballerList";
+createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <MyFirstComponent name="first" status={true} work="function"></MyFirstComponent>
-    <MyFirstComponent name="second" status={true} work="function"></MyFirstComponent>
-    <MyFirstComponent name="Third" status={false} work="function"></MyFirstComponent>
-    <MyFirstComponent name="Fourth" status={false} work="function"></MyFirstComponent>
-  </StrictMode>,
-)
+    {/* <App></App> */}
+  <FootballerList></FootballerList>
+  </StrictMode>
+);
