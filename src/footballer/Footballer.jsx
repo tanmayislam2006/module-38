@@ -8,7 +8,7 @@ const Footballer = ({footballer}) => {
             <div className="my-3 ">
                 <div className="flex gap-1">
 
-                    <div className="w-12 h-12 rounded-full border-4 border-blue-500 p-1"><img className="h-full  object-fill rounded-full w-full" src="https://static.vecteezy.com/system/resources/previews/002/125/745/non_2x/soccer-player-action-outline-vector.jpg" alt=""/></div>
+                    <div className={`w-12 h-12 rounded-full border-4 ${footballer.status==="Active"?"border-blue-600":"border-gray-500"}  p-1`}><img className="h-full  object-fill rounded-full w-full" src="https://static.vecteezy.com/system/resources/previews/002/125/745/non_2x/soccer-player-action-outline-vector.jpg" alt=""/></div>
                     <div className="flex flex-col">
                         <h3 className="text-lg font-bold flex items-center gap-2">{footballer.name}
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#A5158C" className="size-6">
