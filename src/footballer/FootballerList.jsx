@@ -164,7 +164,7 @@ const FootballerList = () => {
         },
       ];
     return (
-        <div className="max-w-7xl mx-auto grid grid-cols-4 gap-4">
+        <div className="max-w-7xl mx-auto grid grid-cols-4 gap-4 my-10">
             {
                 footbalerList.map(footballer=><Footballer key={footballer.id} footballer={footballer}></Footballer>)
                
